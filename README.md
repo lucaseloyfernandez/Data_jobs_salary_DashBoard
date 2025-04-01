@@ -1,63 +1,62 @@
-# Data_jobs_salary_DashBoard
-This Project was made by @LukeBarousse great teacher that help me along this data journey im going.
-I follow @LukeBarousse re-writing the code and following his code path.
+# Proyecto en EXCEL sobre los Salarios de los Trabajadores en el rubro de la ciencia de datos.
+Este proyecto fue realizado con la ayuda y guia de @LukeBarousse.
 
-# Excel Salary Dashboard
+# Excel Dashboard Salarios
 
 ![1_Salary_Dashboard.png](Images/1_Salary_Dashboard.png)
 
-## Introduction
+## Introduccion
 
-This data jobs salary dashboard was created to help job seekers investigate salaries for their desired jobs and ensure they are being adequately compensated. 
+Este proyecto tiene la finalidad de ayudar a los trabajadores dentro de la ciencia de datos a conocer cuales son los salarios promedios segun paises, o rubro
+dentro de la profesion.
+Los datos utilizados en el proyecto fueron obtenidos para utilizar como ejemplos del curso de Excel de @LukeBarousse. Nos permite trabajar con ésta herramienta
+esencial en el analisis de datos. Los "woorkbook" utilizados en el proyecto tienen informacion sobre: "job titles" (trabajos), "salaries" (salarios), "locations"
+(locaciones), "essential skills" (habilidades y conocimientos).
 
-The data is from my Excel course, which provides a foundation in analyzing data using this powerful tool. The data contains detailed information on job titles, salaries, locations, and essential skills that are presented here.
+### Dashboard
+El proyecto final se encuentra en: [1_Salary_Dashboard.xlsx](1_Salary_Dashboard.xlsx).
 
-### Dashboard File
-My final dashboard is in [1_Salary_Dashboard.xlsx](1_Salary_Dashboard.xlsx).
+### Habilidades en Excel utilizadas:
 
-### Excel Skills Used
+- **📉 Graficos**
+- **🧮 Formulas y Funciones**
+- **❎ Validacion de datos**
 
-The following Excel skills were utilized for analysis:
+### Dataset 
+La Dataset de este proyecto contiene datos reales sobre trabajos relacionados con la ciencia de datos durante el 2023
 
-- **📉 Charts**
-- **🧮 Formulas and Functions**
-- **❎ Data Validation**
+- **👨‍💼 Job titles (Trabajos)**
+- **💰 Salaries (Salarios)**
+- **📍 Locations (Locaciones)**
+- **🛠️ Skills (Habilidades y conocimientos)**
 
-### Data Jobs Dataset
+## Creacion de Gráficos
 
-The dataset used for this project contains real-world data science job information from 2023. The dataset is available via my Excel course, which provides a foundation for analyzing data using Excel. It includes detailed information on:
+### 📉 Graficos
 
-- **👨‍💼 Job titles**
-- **💰 Salaries**
-- **📍 Locations**
-- **🛠️ Skills**
-
-## Dashboard Build
-
-### 📉 Charts
-
-#### 📊 Data Science Job Salaries - Bar Chart
+#### 📊 Salarios de trabajos en Ceincia de datos - Grafico de barras
 
 <img src="Images/1_Salary_Dashboard_Chart1.png" width="850" height="550" alt="Salary Dashboard Chart1">
 
-- 🛠️ **Excel Features:** Utilized bar chart feature (with formatted salary values) and optimized layout for clarity.
-- 🎨 **Design Choice:** Horizontal bar chart for visual comparison of median salaries.
-- 📉 **Data Organization:** Sorted job titles by descending salary for improved readability.
-- 💡 **Insights Gained:** This enables quick identification of salary trends, noting that Senior roles and Engineers are higher-paying than Analyst roles.
+- 🛠️ **Excel:** Se utilizó la función de gráfico de barras (con valores salariales formateados) y diseño optimizado para mayor claridad.
+- 🎨 **Elección de diseño:** Gráfico de barras horizontales para comparación visual de salarios medios.
+- 📉 **Organización de datos:** Títulos de trabajo ordenados por salario descendente para mejorar la legibilidad.
+- 💡 **Información obtenida:** Esto permite una rápida identificación de las tendencias salariales, teniendo en cuenta que los puestos sénior
+-                               y los ingenieros pagan más que los puestos de analista.
 
-#### 🗺️ Country Median Salaries - Map Chart
+#### 🗺️ Salarios medios por país - Gráfico de mapa
 
 ![1_Salary_Dashboard_Chart2.png](Images/1_Salary_Dashboard_Chart2.png)
 
-- 🛠️ **Excel Features:** Utilized Excel's map chart feature to plot median salaries globally.
-- 🎨 **Design Choice:** Color-coded map to visually differentiate salary levels across regions.
-- 📊 **Data Representation:** Plotted median salary for each country with available data.
-- 👁️ **Visual Enhancement:** Improved readability and immediate understanding of geographic salary trends.
-- 💡 **Insights Gained:** Enables quick grasp of global salary disparities and highlights high/low salary regions.
+- 🛠️ **Excel:** Se utilizó la función de gráfico de mapas de Excel para trazar los salarios medios a nivel mundial.
+- 🎨 **Elección de diseño:** Mapa codificado por colores para diferenciar visualmente los niveles salariales en las distintas regiones.
+- 📊 **Representación de datos:** Salario medio graficado para cada país con datos disponibles.
+- 👁️ **Mejora visual:** Legibilidad mejorada y comprensión inmediata de las tendencias salariales geográficas.
+- 💡 **Información obtenida:** Permite comprender rápidamente las disparidades salariales globales y destaca las regiones con salarios altos y bajos.
 
-### 🧮 Formulas and Functions
+### 🧮 Formulas y Funciones
 
-#### 💰 Median Salary by Job Titles
+#### 💰 Salario Medio por Trabajo
 
 ```
 =MEDIAN(
@@ -71,47 +70,50 @@ IF(
 )
 ```
 
-- 🔍 **Multi-Criteria Filtering:** Checks job title, country, schedule type, and excludes blank salaries.
-- 📊 **Array Formula:** Utilizes `MEDIAN()` function with nested `IF()` statement to analyze an array.
-- 🎯 **Tailored Insights:** Provides specific salary information for job titles, regions, and schedule types.
-- **🔢 Formula Purpose:** This formula populates the table below, returning the median salary based on job title, country, and type specified.
+- 🔍 **Filtrado de múltiples criterios:** verifica el Trabajo, el país, el tipo de horario laboral y excluye la informacion Faltante (N/A, y espacios en blanco).
+- 📊 **Array Formula:** Utilizamos la funcion `MEDIAN()` con otra funcion `IF()` anidada para analizar el arreglo.
+- 🎯 **Información personalizada:** Proporciona información salarial específica para puestos de trabajo, regiones y tipos de horarios.
+- 🔢 **Propósito de la fórmula:** Esta fórmula completa la tabla a continuación y devuelve el salario medio según el puesto de trabajo, el país y el tipo especificado.
 
-🍽️ Background Table
+🍽️ Background Table (Tabla utilizada como base)
 
 ![1_Salary_Dashboard_Screenshot1.png](Images/1_Salary_Dashboard_Screenshot1.png)
 
-📉 Dashboard Implementation
+📉 Implementación del Dashboard
 
 <img src="Images/1_Salary_Dashboard_Job_Title.png">
 
-#### ⏰ Count of Job Schedule Type
+#### ⏰ Recuento de tipos de horarios laborales
 
 ```
 =FILTER(J2#,(NOT(ISNUMBER(SEARCH("and",J2#))+ISNUMBER(SEARCH(",",J2#))))*(J2#<>0))
 ```
 
-- 🔍 **Unique List Generation:** This Excel formula below employs the `FILTER()` function to exclude entries containing "and" or commas, and omit zero values.
-- **🔢 Formula Purpose:** This formula populates the table below, which gives us a list of unique job schedule types.
+- 🔍**Generación de lista única:** la siguiente fórmula de Excel emplea la función `FILTER()` para excluir entradas que contengan "y" o comas y omitir valores cero.
+- **🔢 Propósito de la fórmula:** Esta fórmula completa la tabla a continuación, lo que nos brinda una lista de tipos de horarios laborales únicos.
 
-🍽️ Background Table
+🍽️ Background Table (Tabla utilizada como base)
 
 ![1_Salary_Dashboard_Type.png](Images/1_Salary_Dashboard_Screenshot2.png)
 
-📉 Dashboard Implementation:
+📉 Implementación del DashBoard:
 
 <img src="Images/1_Salary_Dashboard_Type.png" width="350" height="500" alt="Salary Dashboard Type">
 
-### ❎ Data Validation
+### ❎ Validación de datos
 
-#### 🔍 Filtered List
+#### 🔍 Lista filtrada
 
-- 🔒 **Enhanced Data Validation:** Implementing the filtered list as a data validation rule under the `Job Title`, `Country`, and `Type` option in the Data tab ensures:
-    - 🎯 User input is restricted to predefined, validated schedule types
-    - 🚫 Incorrect or inconsistent entries are prevented
-    - 👥 Overall usability of the dashboard is enhanced
+- 🔒 **Validación de datos mejorada:** La implementación de la lista filtrada como una regla de validación de datos en las opciones "Trabajo", "País" y "Tipo" en la 
+                                        pestaña Datos garantiza lo siguiente:
+    - 🎯 La entrada del usuario está restringida a tipos de programación predefinidos y validados
+    - 🚫 Se evitan entradas incorrectas o inconsistentes
+    - 👥 Se ha mejorado la usabilidad general del panel de control
 
 <img src="/Images/1_Salary_Dashboard_Data_Validation.gif" width="425" height="400" alt="Salary Dashboard Data Validation">
 
 ## Conclusion
 
-I created this dashboard to showcase insights into salary trends across various data-related job titles. Utilizing data from my Excel course, this dashboard allows users to make informed decisions about their career paths. Exploring the functionalities to understand how location and job type influence salaries. 
+Creé este panel para mostrar información sobre las tendencias salariales en diversos puestos de trabajo relacionados con la ciencia de datos. Utilizando datos del curso de Excel, este DashBoard permite a los usuarios tomar decisiones informadas sobre sus trayectorias profesionales. Explora las funcionalidades para comprender cómo la ubicación y el tipo de puesto influyen en los salarios.
+
+## Trabajo realizado por Lucas Eloy Fernandez, Analista de Datos Jr. 
